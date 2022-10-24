@@ -121,6 +121,9 @@ public with sharing class Day2 {
 
         integer a=1;
          system.debug(++a);
+
+         https://github.com/Pradip222/Oct-batch
+         https://www.azul.com/downloads/?version=java-11-lts&os=windows&architecture=x86-64-bit&package=jdk
       */
         
     
