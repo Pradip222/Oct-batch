@@ -48,7 +48,7 @@ public with sharing class Day4 {
         }
       }
       */
-      /**/
+      /*
        1-12 valid months
     2,3,4,5 -> summer
     6,7,8,9 -> spring
@@ -79,10 +79,12 @@ public with sharing class Day4 {
 
        
        */
-      public static void printSeasonSwitch(){
-        integer monthNumber=2;
-
-        string season=(monthNumber==1 || monthNumber==12 || monthNumber==11 || monthNumber==10) ? 'winter' : 'another season or invalid month';
-        System.debug(Season);
+      public static void printSeasonTernary(){
+        integer monthNumber=4;//
+    string season=(monthNumber==1|| monthnumber==12 || monthNumber==11 || monthNumber==12) ? 'winter'
+    : (monthNumber==2 || monthNumber==3 ||monthNumber==4 ||monthNumber==5) ? 'summer'
+    : (monthNumber==6 ||monthNumber==7 ||monthNumber==8 ||monthNumber==9) ? 'spring'
+    :'invalid month';
+    system.debug(season);//summer
       }
 }
