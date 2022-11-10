@@ -79,11 +79,8 @@ sytnax:
     myobj.SayHellO('yash'); //calling procedure
 
 
-     day5 myObj= new day5(); //creating object
-     system.debug(myobj.getValueOfPI()); //calling the function
-
-      day5 myObj= new day5();
-     system.debug(myobj.add(3,2));
+     day5 myObj= new day5();
+     system.debug(myobj.getValueOfPI());
 
 */
 
