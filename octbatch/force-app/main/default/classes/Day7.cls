@@ -42,18 +42,18 @@ public  class Day7 {
      * loop inside loop
      */
     while (true){
-        integer counter=2; 
+        integer counter1=2; 
              do{
 
-		        counter+=1; 
+		        counter1+=1; 
                  break;
 		        System.debug('hello');//1
 
 
-	        }while (counter<5);
+	        }while (counter1<5);
             break;
     System.debug('hello1');
     }
-    
+
      }
 }

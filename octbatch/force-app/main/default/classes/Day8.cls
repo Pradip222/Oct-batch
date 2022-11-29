@@ -22,11 +22,12 @@ public  class Day8 {
  Account myAccount=new Account();
     myaccount.name = 'test';
     myaccount.phone='444';
+    myAccount.AnnualRevenue=989.8;
     myAccount.billingcountry='IN';
 insert myAccount;
 
 Contact c= new contact();
-c.lastname='me';
+c.lastname=me';
 c.accountID=Myaccount.id;
 insert c;
      */
