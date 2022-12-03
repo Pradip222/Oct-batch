@@ -130,6 +130,43 @@ List<Datatype> <variableName> = new List<Datatype> ();
  
 
      }
+     public static void listcollection()
+{
+    List<Integer> nolist = new  List<Integer> ();
+    System.debug(nolist);
+    nolist.add(2);
+    nolist.add(1);
+    nolist.add(10);
+    nolist.add(1);
+    nolist.add(10);
+    nolist.add(1);
+    nolist.add(2);
+    System.debug(nolist);
+    nolist.get(1);
+    nolist.contains(1);
+
+
+    Integer i;
+    Integer occurance=0;
+   //(2, 1, 10, 1, 10, 1, 2)
+       for(i=0;i<nolist.size();i++)
+        {
+           if(nolist.get(i)==1) {
+            occurance++;
+           }
+        }
+        System.debug('1 is present '+occurance +'times');
+        occurance=0; 
+
+        while (nolist.contains(1)) {
+            occurance++;
+            nolist.remove(nolist.indexOf(1));
+        }
+        System.debug('1 is present '+occurance +'times');
+        
+    }
+    
+    }
 
      /*
      1. create list contining below elements:
