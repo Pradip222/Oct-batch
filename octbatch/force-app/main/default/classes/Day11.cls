@@ -28,6 +28,8 @@ public with sharing class Day11 {
     SELECT billingcountry,count(name) from account group by billingcountry
 
 
+write a query to fetch all accounts from database whose annual revenuw is greater than 5000
+
     
     
     */
