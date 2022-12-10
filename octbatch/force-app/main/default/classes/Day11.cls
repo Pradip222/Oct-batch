@@ -70,7 +70,7 @@ select name,contact__r.name from Asset
      select account.name,count(id) from contact group by account.name having count(id)>2
 
 
-     LIMIT clause:
+     LIMIT clause:  
 
      assignment
       1.write a query to find account who has highest annualrevenue :
