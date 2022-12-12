@@ -18,7 +18,7 @@ public with sharing class Day11 {
     [FOR UPDATE]
     [ALL ROWS]
 
-    SELECT  FROM Account where Phone='444'
+    SELECT name FROM Account where Phone='444'
 
     aggregate functions:
     1.min
@@ -85,6 +85,38 @@ select name,contact__r.name from Asset
 
     system.debug(accounts);
 
+
+
+
+
+    me :Hey salesforce give me some contacts :
+     sF:you want to apply criteria on it ? 
+     ME:no
+     SF:Ok do you want results to be grouped?  
+     me: yes
+     SF: tell me grouping criteria
+     ME: group them by accounts
+    
+     select lastname,account.name from contact group by account.name,lastname
+
+
+     SF: do you want to aggregated data?
+     me: yes i want count of the records per account
+
+     select account.name,count(name) from contact group by account.name
+
+     SF: do want any filter on aggrgated data?
+     me: yes of course
+     SF: tell me what filter you want to apply?
+     Me: i want accounts who has less than 4 contacts
+
+     select account.name,count(name) from contact group by account.name having count(name)  <4
+
+     SF: do want data to be ordered ?
+     me: yes in asending order
+     SF: column name please
+
+    select account.name,count(name) from contact group by account.name having count(name)  <4 order by count(name) 
     */
     
 }
