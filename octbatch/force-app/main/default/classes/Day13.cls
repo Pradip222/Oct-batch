@@ -81,4 +81,36 @@ Day13.demo('service','ram');
             System.debug(d);
         }
       }
+
+      /**
+       * 
+        FIND 'searchText/searchPAttern'  <OPTIONS> RETURNING
+        <objectName1> (fieldname1,fieldname2.....fieldnameN),
+        .,
+        .,
+        .,
+        .,
+        .,
+        <objectName20> (fieldname1,fieldname2.....fieldnameN)
+
+        me: hey sF i want to find something
+
+        FIND 'something'
+        sF: okey, where you want to find
+
+
+        me: i want to search in all fields
+        
+        Find  'something' in all fields
+
+        sf:okey, which object you want to include in search
+
+        me: i want to search on leads and accounts
+
+        sf: which fields you want to return ?
+
+        me: name of account and id,name of lead
+ Find  'something' in all fields returning account(name), lead(id,name)
+
+       */
 }
