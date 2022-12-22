@@ -9,7 +9,7 @@ Day13.demo('service','ram');
     */
 
     public static void demo(String userprofile,string name){
-        List<Account> accountsUsingStaticQuery=[select id,name from account where name =:name ];
+        List<Account> accountsUsingStaticQuery=[select id,name from account where name =:name ]; //static
         System.debug(accountsUsingStaticQuery);
         String query='select id,name ';
         if(userprofile=='service'){
@@ -22,7 +22,7 @@ Day13.demo('service','ram');
 
         system.debug(query);
 
-        List<Account> accountsUsingDynamicQuery=Database.query(query);
+        List<Account> accountsUsingDynamicQuery=Database.query(query); //dynamic soQL
         System.debug(accountsUsingDynamicQuery);
         /**
          user1 : service profile : id , name , annualRevenue
