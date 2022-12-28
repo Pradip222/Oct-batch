@@ -9,9 +9,9 @@ public  class Day15 {
     other than setup object all objects are non setup (custom / standard) : account,contact,..student__c,
     
     
-    day15.mixDML();
+    day15.myfutureMethod();
 
-    day15.mixDMLSolution();
+        
     future methods:
     syntax:
     @future
@@ -56,8 +56,8 @@ public  class Day15 {
     }
     @future
       public static void myfutureMethod(){
-        user u=[select id,Signature  from user where Username='insightssecurity@00d5g00000kx1ypead.com'];
-        u.Signature='sign';
+        user u=[select id,IsActive  from user where Username='insightssecurity@00d5g00000kx1ypead.com'];
+        u.IsActive=false;
 
         update u;
         Day15.myfutureMethod2();
