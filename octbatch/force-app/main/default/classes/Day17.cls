@@ -6,9 +6,11 @@ public with sharing class Day17 {
 
       events:
       1.before insert
+
       2.after insert
 
       3.before update
+      
       4.after update
 
       5.before delete
