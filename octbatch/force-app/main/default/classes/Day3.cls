@@ -4,7 +4,8 @@ public with sharing class Day3 {
      = -> assign a value
      *= -> multiply the value and assign
     integer a=1; //assignment
-    a=a*3; ///
+
+    a*=3; /// 
     system.debug(a);
 
     += -> add and assign
