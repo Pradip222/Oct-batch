@@ -8,8 +8,10 @@ public  class Day15 {
     2.non setup objects:
     other than setup object all objects are non setup (custom / standard) : account,contact,..student__c,
     
-    day15.myfutureMethod();
+    
+    day15.mixDML();
 
+    day15.mixDMLSolution();
     future methods:
     syntax:
     @future

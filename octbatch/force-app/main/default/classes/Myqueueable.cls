@@ -7,13 +7,14 @@ public  class Myqueueable implements Queueable {
     public void execute(System.QueueableContext ctx) {
         account a = new account();
         a.name='queue';
+        
 
         insert a;
 
         c1.accountId=a.id;
         insert c1;
-        Myqueable2 obj= new Myqueable2(a.id);
-        System.enqueueJob(obj);
+       
+        //System.enqueueJob(obj);
     }
 
     /**
@@ -27,14 +28,6 @@ public  class Myqueueable implements Queueable {
     Id jobid = system.enqueuejob(a);
     system.debug(jobid);
 
-
-    create account and related contact to it , show the job chaining in queueable:
-    1.accountqueueqble -> create account
-    2.contactQueueable -> create contact -> contact name should contain account name
-
-
-    Accountqueueqble a=new Accountqueueqble();
-    system.enqueuejob(a);
      */
 
 }

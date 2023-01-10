@@ -1,6 +1,6 @@
 trigger rollup on contact (after insert,after update,after delete, after undelete) {
   set<ID> accountIDS= new Set<id>();
-    if(trigger.isInsert || trigger.isUndelete){
+    if(trigger.isInsert || trigger.isUndelete){ 
          //count will increase
          for(contact a: trigger.new){
            if(a.AccountID!=null)

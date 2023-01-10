@@ -9,5 +9,4 @@ public class Accountqueueqble implements Queueable {
         ContactQueueable con= new ContactQueueable(a);
         System.enqueueJob(con);
     }
-    
 }
